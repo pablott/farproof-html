@@ -1,0 +1,90 @@
+
+/* =============================================================================
+	  Item Contents (shows the Pages inside an Item in
+	  two forms: thumbs and list)
+   ============================================================================= */
+/* ### BIG PREVIEWS ### */
+#page_container {
+        height:100%;
+        width:100%;
+        margin:auto; position:relative;
+}
+.zoomed {
+      /* transform:rotate(7deg);
+        -ms-transform:rotate(7deg); 
+        -moz-transform:rotate(0deg) scale(5); 
+        -webkit-transform:rotate(7deg); 
+        -o-transform:rotate(7deg); 
+        -moz-transform-origin: 50% 50%;*/
+        }
+
+
+.page { position:absolute; top:0; bottom:0px; left:0px; right:0; border: solid 0px red;
+        opacity: 1;
+        }
+.page.odd { left:50%; right:0; /*background-color: blue;*/ background-image: url('XX../../../HTML/img/item_sample/03.png'); }
+.page.even { right:50%; left:0; /*background-color: green;*/ background-image: url('XX../../../HTML/img/item_sample/02.png'); }
+/*http://stackoverflow.com/questions/3971841/how-to-resize-images-proportionally-keeping-the-aspect-ratio*/
+.page.even img { max-height:100%; max-width:100%; position:absolute; right:0px;  }
+.page.odd img { max-height:100%; max-width:100%; position:absolute; left:0px;  }
+
+
+
+
+
+/* ### THUMBS ### */
+.thumb_container { 
+        float:left;
+        text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);
+        margin-bottom: 46px; margin-top: 40px;
+}
+
+.page_thumb { width:65px; height:90px ;
+              background-color: #f4f2ea; border: solid 3px transparent;
+              box-shadow: 3px 4px 2px -1px rgba(0, 0, 0, .2);
+              float:left;
+              position:relative;
+              font-size:12px;
+              padding:6px;
+              background-repeat: repeat, repeat-y, no-repeat;
+              background-origin: border-box;
+}
+.dummy { visibility:hidden; }
+.page_thumb:hover {  border: solid 3px #0f91f0; }
+.page_thumb:hover > .page_number { background-color: #0f91f0; font-weight: bold; color:white; }
+
+.thumb_container .odd { margin:0px 20px 0px 0px;
+            background-image: url('../../../HTML/img/256-67-6-monochrome.png'), url('../../../HTML/img/page_shadow_odd.png') ;
+            background-position: left ;
+}
+.thumb_container .even { margin:0px 0px 0px 20px; 
+            background-image: url('../../../HTML/img/256-67-6-monochrome.png'), url('../../../HTML/img/page_shadow_even.png') ;
+            background-position: right;
+}
+.page_number {position:absolute; top:-18px; color:gray; width:20px; text-align:center;  border-radius: 4px 4px 0px 0px; }
+.thumb_container .odd > .page_number  { right:-3px; }
+.thumb_container .even > .page_number  { left:-3px; }
+
+.thumb_container .page_info { position:absolute; bottom:-40px; right:0; left:0;
+                text-align: center;
+                font-weight: normal; font-size:11px; font-style: italic;
+                text-shadow:none; 
+}
+.thumb_container .page_status { 
+    position:absolute; bottom:0; right:-3px; left:-3px; height:20px; line-height: 20px;
+    text-align: center;/* font-size:14px;*/ color:white; font-weight:bold;
+}
+.thumb_container .odd > .page_status { right: -8px;  padding-right:8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px;}
+.thumb_container .even > .page_status { left: -8px; padding-left:8px; border-top-left-radius: 8px; border-bottom-left-radius: 8px;}
+
+.page_status.accepted {
+     background-color:rgba(0,157,0,.8);
+}
+.page_status.rejected {
+     background-color:rgba(214,3,3,.6); 
+}
+.page_status.pending {
+     background-color:rgba(213,186,36,.4);
+}
+
+

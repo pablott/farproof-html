@@ -1,0 +1,143 @@
+/* [1] http://stackoverflow.com/questions/4013701/how-to-select-all-tr-except-first-tr-in-the-table */
+
+/* #view has to shrink to make space for #index */
+#view {left:0px; top:0px; bottom:213px; overflow: hidden;}
+
+/* =============================================================================
+	  Item Contents (shows the Pages inside an Item in
+	  two forms: thumbs and list)
+   ============================================================================= */
+/* =============================================================================
+	  Index
+   ========================================================================== */
+#index { position:fixed; bottom:0; height:212px; left:0; right:0;
+        overflow: auto; 
+        overflow-x: scroll;
+        border-top: solid 1px gray;
+        }
+        
+/* Inner wrap neccesary to arrange thumbs horizontally */
+#index > #inner-wrap { margin-right:  -999em; float: left;
+                        padding-right:40px;
+        }
+
+/* Dummy element is 0px width when arranged horizontally (NOTE: still has margin/padding) */
+#index .dummy { width:0px; }
+
+/* Skin of the buttons */
+.btn_black { /*background: url('../../HTML/img/bg-controls-darkest.png'), none;*/
+                background-color:rgba(77,77,77,0);
+                background-attachment: fixed;
+                font-size: 11px; line-height: 20px; height:20px; width:80px;
+                color:white; text-align:center; text-shadow: 0px -1px 0px rgba(0, 0, 0, .6), 0px 1px 0px rgba(0, 0, 0, .6), 1px 0px 0px rgba(0, 0, 0, .6), -1px 0px 0px rgba(0, 0, 0, .6);
+                border: 1px solid rgba(77,77,77,.6);
+                -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none;
+                cursor:pointer; 
+                
+                margin-right:10px; overflow: hidden; float:left;
+                }
+
+#toolbar .btn_black { border-radius: 0 0 8px 8px;
+                        border-top: none;
+}
+#index_toolbar .btn_black { border-radius: 8px 8px 0 0;
+                        border-bottom: none;
+}
+
+/* :hover and :active rules for buttons.
+   It has two levels of gray           */
+.btn_black:hover { background: rgba(177,177,177,1); }
+.btn_black:active { background: rgba(82, 159, 254, 1); }
+
+/*#toolbar .vertical:hover, #toolbar .horizontal:hover { background: rgba(177,100,177,0);}*/
+.btn_black > div:hover { background: rgba(126,126,126,1); }
+.btn_black > div:active { background: rgba(82, 159, 254, 1); }
+
+
+
+/* =============================================================================
+	  Toolbar at the top
+   ========================================================================== */
+#toolbar { position: fixed; top: 0px; left: 38px;
+        z-index: 2000;
+        }
+        
+#toolbar input { background-color:rgba(255,255,255,.0); text-align:center; width:36px; height:14px;
+                border:none; border-radius: 4px; color:inherit; text-shadow:inherit;
+                font-size:inherit; font-family:monospace;
+                -moz-user-select: toggle; -khtml-user-select: toggle; -webkit-user-select: toggle; -o-user-select: toggle;
+                }
+
+#toolbar input:hover { background: rgba(126, 126, 126, 1); }
+#toolbar input:focus { background: rgba(82, 159, 254, 1); }
+
+
+#toolbar .vertical div:not(:first-child) { width:40px; float:left; }
+#toolbar .horizontal div:first-child { width:80px; float:left; }
+#toolbar .horizontal div:not(:first-child) { width:30px;  float:left; }    /* [1] */
+#toolbar > div:first-child { width:30px; }
+
+#toolbar .vertical:active, #toolbar .horizontal:active { background: rgba(177,177,177,1);}
+#toolbar .btn_black > div:first-child:hover { background: rgba(126,126,126,0); } /* no dark bground for first element */
+#toolbar .btn_black > div:first-child:active { background: rgba(82, 159, 254, 1); }
+
+/* For 3d button. TODO: find a better way to select this item and that responds to :hover */
+.model:active { background: rgba(51,164,2,.5); color:red; }
+
+
+/* #toolbar > ul > li { border-radius: 0 0 8px 8px; opacity:1; }
+#toolbar > ul > li > ul > li { border:none; }
+#toolbar > ul > li:hover { background: none; }
+#toolbar > ul > li > ul > li:hover { background: rgba(126,126,126,1); }
+#toolbar > ul > li > ul > li:active { background: rgba(82, 159, 254, 1); }  */
+
+/*#toolbar .horizontal li:not(:first-child) { width:30px; }*/
+
+
+
+/* =============================================================================
+	  Index Toolbar:
+	  - toggle_index: hides/shows #index and rearranges #view accordingly
+	  - toggle_list: hides/shows numeric page_list (no thumbs here)
+   ========================================================================== */
+#index_toolbar { position: fixed; bottom:213px; left:38px;
+                z-index:2000;
+        }
+
+#toggle_index { width: 30px; }
+
+#toggle_list { bottom:0px; overflow-x:hidden; overflow-y: auto;
+              position:absolute; left:42px; max-height:200px;
+        }
+
+#list {  left: 0px; top: 0px; color:white;
+        font-family: monospace; position:absolute; top:0px;
+        background-color: rgba(255,100,50,.0); width: 100%;
+        }
+#list .selected { color:white; background-color: rgba(82, 159, 254, 1); }
+
+#list > *:hover  { background: rgba(126, 126, 126, 1); }
+#list > .selected:hover  { background: rgba(82, 159, 254, 1); }
+#list > .selected:hover  { background: rgba(82, 159, 254, 1); }
+#toggle_list.btn_black:active  { background: rgba(177,177,177,1); }
+
+
+#nav { position:absolute; left:132px; width:122px ;}
+#nav div { float:left; width:30px; }
+#nav #navFullLeft { /*margin-right:-8px;*/  }
+#nav #navLeft { /*border-right: solid 1px gray;*/  border-left: solid 1px gray;  border-radius:8px 0 0 0; }
+#nav #navRight { border-right: solid 1px gray;  border-radius:0 8px 0 0; }
+
+#nav.btn_black:active  { background: rgba(177,177,177,1); }
+
+
+
+/* =============================================================================
+	  Comment box
+   ========================================================================== */
+.comment_box {
+        color:black; background: yellow url('../../HTML/img/notebook.png');
+        width:100px; padding:12px 0 12px 0; height:100px; border-radius: 0 0 4px 4px;
+        position:absolute; left: 0px; top: 0; border:none; z-index: 1500;
+        }
+

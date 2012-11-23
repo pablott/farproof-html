@@ -1,0 +1,240 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>LIST</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<script src="js/jquery-1.8.1.js"></script>
+	<script src="js/fixbar.js"></script>
+	<script src="js/checkbox.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/widgets/buttons.css">
+	<link rel="stylesheet" href="css/widgets/lists.css">
+	<link rel="stylesheet" href="css/views_item_contents_list.css">
+	<link rel="stylesheet" href="fonts/heydings-controls/stylesheet.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="fonts/heydings-common-icons/stylesheet.css" type="text/css" charset="utf-8">
+</head>
+<body>
+	<div class="debug">--</div>
+	<div id="topbar">
+		<ul>
+			<li> Client </li>
+			<!--<span> > </span>-->
+			<li> 60625 Job name </li>
+			<li> Item </li>
+			<li> <div class="icon icon1">5</div> List </li>
+		</ul>
+	</div>
+
+	<div id="sidebar">
+		<div class="btn_box_top">
+			<div class="btn btnM btnV top"> <div class="icon icon2">k</div> Thumbs </div>
+			<div class="btn btnM btnV middle pushed"> <div class="icon icon1">5</div> List </div>
+			<div class="btn btnM btnV bottom"> <div class="icon icon2">G</div> Configure </div>
+			<div class="btn btnM"> <div class="icon icon2">+</div> Update Pages </div>
+			<div class="help">
+				Click pages to view them in a new window.<br>
+				Mark checboxes to select pages for deletion.
+			</div>
+		</div>
+		
+		<div class="btn_box_bottom">
+			<div class="btn btnM delete"> <div class="icon icon1">X</div> Delete Pages </div>
+		</div>
+	</div>
+	
+	<div id="view">
+		<div class="list_header black">
+			<ul>  
+				<li class="checkbox"><input type="checkbox" class="checkall" name="option1" value="ALL"></li>
+				<li class="page">Page</li>
+				<li class="comments">Comments (new)</li>
+				<li class="revisions">Revisions (new)</li>
+				<li class="status">Status</li>
+				<li class="pdf">PDFs</li>
+				<li class="updated">Updated on</li>
+				<li class="added">First added on</li>
+			</ul>
+		</div>
+		<div class="list_container">
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">1</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">2</li>
+				<li class="comments">1</li>
+				<li class="revisions">4</li>
+				<li class="status pending">??</li>
+				<li class="pdf">2.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">3</li>
+				<li class="comments">0</li>
+				<li class="revisions">1</li>
+				<li class="status rejected">FAIL</li>
+				<li class="pdf">3.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">4</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">5</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">6</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">7</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">8</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">9</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">10</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">11</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">12</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">13</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">14</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">15</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+			<ul>
+				<li class="checkbox"><input type="checkbox" name="option1" value="page1"></li>
+				<li class="page">16</li>
+				<li class="comments">5</li>
+				<li class="revisions">3</li>
+				<li class="status accepted">OK</li>
+				<li class="pdf">1.pdf</li>
+				<li class="updated">10-feb-2012</li>
+				<li class="added">1-jan-2012</li>
+			</ul>
+
+		</div>			
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

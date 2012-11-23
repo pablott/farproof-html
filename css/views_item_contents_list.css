@@ -1,0 +1,43 @@
+
+/* =============================================================================
+	  Item Contents (shows the Pages inside an Item in
+	  two forms: thumbs and list)
+   ============================================================================= */
+/*
+ * ## Special rule for fitting list_header with fixed position
+ *    and avoid scrolling horizontally (it wrecks columns alignment)
+ *    TODO: Configure to use list_header with absolute position (instead of fixed)
+ *    
+ *    and add a JavaScript to place it always on top of view so horizontal scroll works
+ *    as expected.
+ */
+/*#view { overflow: scroll-y: visible; }
+*/
+
+/*
+##### LIST ####
+*/
+
+.list_header { height:60px;  line-height: 60px;  min-width: 600px;
+                
+}
+.list_container { min-width: 600px; 
+    position:absolute; top:69px; left:0px; right:0; bottom:0; 
+}
+
+
+
+
+li.checkbox { width:5%; }
+li.page { width:6%; }
+#view .list_container li.page { text-align:right; }
+li.comments { width:16%; }
+li.revisions { width:16%; }
+li.status { width:10%; }
+li.pdf { width:9%; }
+li.updated { width:16%; }
+li.added { width:16%; }
+
+/*#view .list_header li { text-align: center; border-color:back; }
+*/ 
+
