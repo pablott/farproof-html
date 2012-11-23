@@ -17,7 +17,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* =============================================================================
 	  Primary Styles
    ========================================================================== */
-body { background-image:url('../../HTML/img/bg-controls-grid.png');
+body { background-image:url('../img/bg-controls-grid.png');
 	  background-attachment:fixed; background-color:#d8d8d8;
 	  overflow:hidden;
 	  }
@@ -69,7 +69,7 @@ body { background-image:url('../../HTML/img/bg-controls-grid.png');
 #topbar { font-size: 1.4em; font-weight:bold; line-height:42px;
 	  text-shadow: 0px -1px 0px rgba(0, 0, 0, .8), 0px 2px 0px rgba(118, 118, 163, 0.8);
 	  white-space: nowrap; 
-	  background-image: url('../../HTML/img/bg-header.png'), -moz-linear-gradient(bottom, rgb(29, 29, 44) 0%, rgb(71, 71, 105) 100%);
+	  background-image: url('../img/bg-header.png'), -moz-linear-gradient(bottom, rgb(29, 29, 44) 0%, rgb(71, 71, 105) 100%);
 	  box-shadow: inset 0px -2px 2px 0px #414141, inset 0px -2px 2px 0px #414141, 0px 1px 2px rgba(0,0,0,.3);
 	  padding: 0px 60px 0px 10px;
 	  height: 42px; 
@@ -80,7 +80,7 @@ body { background-image:url('../../HTML/img/bg-controls-grid.png');
 
 /*#topbar ul { list-style: none; }*/
 #topbar li { color:rgb(220, 224, 226); float:left; padding-left:1%; padding-right:4% ;
-             background-image: url('../../HTML/img/arrow.png'); background-position: top right, top left; background-repeat: no-repeat;
+             background-image: url('../img/arrow.png'); background-position: top right, top left; background-repeat: no-repeat;
 	  }
 #topbar li:hover { background-color: rgba(10, 10, 10, .2); }  
 #topbar li:last-child { background-image: none; padding-right: 14px; }

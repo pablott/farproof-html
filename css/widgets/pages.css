@@ -22,8 +22,8 @@
 .page { position:absolute; top:0; bottom:0px; left:0px; right:0; border: solid 0px red;
         opacity: 1;
         }
-.page.odd { left:50%; right:0; /*background-color: blue;*/ background-image: url('XX../../../HTML/img/item_sample/03.png'); }
-.page.even { right:50%; left:0; /*background-color: green;*/ background-image: url('XX../../../HTML/img/item_sample/02.png'); }
+.page.odd { left:50%; right:0; /*background-color: blue;*/ background-image: url('XX../../img/item_sample/03.png'); }
+.page.even { right:50%; left:0; /*background-color: green;*/ background-image: url('XX../../img/item_sample/02.png'); }
 /*http://stackoverflow.com/questions/3971841/how-to-resize-images-proportionally-keeping-the-aspect-ratio*/
 .page.even img { max-height:100%; max-width:100%; position:absolute; right:0px;  }
 .page.odd img { max-height:100%; max-width:100%; position:absolute; left:0px;  }
@@ -54,11 +54,11 @@
 .page_thumb:hover > .page_number { background-color: #0f91f0; font-weight: bold; color:white; }
 
 .thumb_container .odd { margin:0px 20px 0px 0px;
-            background-image: url('../../../HTML/img/256-67-6-monochrome.png'), url('../../../HTML/img/page_shadow_odd.png') ;
+            background-image: url('../../img/256-67-6-monochrome.png'), url('../../img/page_shadow_odd.png') ;
             background-position: left ;
 }
 .thumb_container .even { margin:0px 0px 0px 20px; 
-            background-image: url('../../../HTML/img/256-67-6-monochrome.png'), url('../../../HTML/img/page_shadow_even.png') ;
+            background-image: url('../../img/256-67-6-monochrome.png'), url('../../img/page_shadow_even.png') ;
             background-position: right;
 }
 .page_number {position:absolute; top:-18px; color:gray; width:20px; text-align:center;  border-radius: 4px 4px 0px 0px; }

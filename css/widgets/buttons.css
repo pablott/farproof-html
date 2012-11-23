@@ -23,7 +23,7 @@
 	  border-radius:8px;
  	  background-color: rgb(146, 164, 173);
 	  border: solid 1px #bebebe;
-	  background-origin:content-box; background-image:url('../../../HTML/img/bg-controls.png');
+	  background-origin:content-box; background-image:url('../../img/bg-controls.png');
 	  }
 
 
@@ -67,21 +67,21 @@
 
 
 /* EN PRUEBAS para ver el efecto del botón pulsado */	  
-.btnM.pushed { background-image:url('../../../HTML/img/bg-controls-darkest.png');
+.btnM.pushed { background-image:url('../../img/bg-controls-darkest.png');
 		  padding-top:3px; padding-bottom:1px;
 		  box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.5); color:white;
 	  }
-.btnM:hover { background-image:url('../../../HTML/img/bg-controls-dark.png');
+.btnM:hover { background-image:url('../../img/bg-controls-dark.png');
 		  color:white;
                    box-shadow: inset 0px 0px 6px 1px rgba(250,250,250,.2); border-color: transparent;
 		      }
-.btnM:active { background-image:url('../../../HTML/img/bg-controls-darkest.png');
+.btnM:active { background-image:url('../../img/bg-controls-darkest.png');
 		  padding-top:3px; padding-bottom:1px;
 		  box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.5);
 	      }
-.btnM.delete:hover { background-image:url('../../../HTML/img/bg-controls-dark-delete.png');
+.btnM.delete:hover { background-image:url('../../img/bg-controls-dark-delete.png');
                      box-shadow: 0px 0px 6px #ff1f34, inset 0px 0px 6px 1px rgba(250,250,250,.2); border-color: transparent;
 		      }
-.btnM.delete:active { background-image:url('../../../HTML/img/bg-controls-darkest-delete.png');
+.btnM.delete:active { background-image:url('../../img/bg-controls-darkest-delete.png');
 		    box-shadow:  0px 0px 6px #ff1f34, inset 0px 0px 6px 1px rgba(0,0,0,.5);
                 }
