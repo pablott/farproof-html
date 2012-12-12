@@ -4,10 +4,10 @@
 /* =============================================================================
 	  Reset
    ========================================================================== */
-html,body,div,p,span,ul,li {padding: 0;margin: 0; font-family: sans-serif; /*color:rgb(53, 53, 53);*/}
+html,body,div,span,p,a,ul,li {padding: 0;margin: 0; font-family: sans-serif; /*color:rgb(53, 53, 53);*/}
 ul { list-style: none; }
 
-a { color: inherit; text-decoration: none; border-bottom: 1px dashed white; }
+a { color: inherit; text-decoration: none; }
 
 /* http://stackoverflow.com/questions/3975769/disable-webkits-spin-buttons-on-input-type-number */
 input[type=number]::-webkit-inner-spin-button,
@@ -42,18 +42,17 @@ body { background-image:url('../img/bg-controls-grid.png');
 .hidden { visibility: hidden;}
 /*.title { font-size:20px; font-weight: bold; }*/
 .summary { font-size:12px; line-height:17px; font-weight:normal;
-          text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);
 	  font-weight:regular;
 	  margin:0px; margin-bottom:6px; }
-.mini_summary { font-size:10px; font-weight:bold; text-align: right;
+.mini_summary { font-size:10px; text-align: right;
 	        position:absolute; right:20px; top:7px; }
 .help {	  font-size:11px; line-height:14px; padding-left:8px; font-style:italic;
 	  margin-top:16px;
 	  }
-.accepted { color:#009d00;  font-weight:bold; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);}
-.rejected { color:#d60303; font-weight:bold; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4); }
-.pending { color:#d5ba24;  font-weight:bold; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4); }
-.comments { color:#17b9f7;  font-weight:bold; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);}
+.accepted { color:#009d00; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);}
+.rejected { color:#d60303; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4); }
+.pending { color:#d5ba24; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4); }
+.comments { color:#17b9f7; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);}
 .unactive { color:rgba(0,0,0,0.4); font-style:italic; }
 .black { text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4); }
 	
@@ -81,11 +80,14 @@ body { background-image:url('../img/bg-controls-grid.png');
 /*#topbar span { opacity:0.3; float:left; padding-left:28px; }*/
 
 /*#topbar ul { list-style: none; }*/
-#topbar li { color:rgb(220, 224, 226); float:left; padding-left:1%; padding-right:4% ;
+#topbar li { color:rgb(240, 240, 240); float:left; padding-left:1%; padding-right:4% ;
              background-image: url('../img/arrow.png'); background-position: top right, top left; background-repeat: no-repeat;
 	  }
-#topbar li:hover { background-color: rgba(10, 10, 10, .2); }  
-#topbar li:last-child { background-image: none; padding-right: 14px; }
+#topbar li a { color:rgb(210,220,220);  border-bottom: 1px dashed rgb(100,200,200); } 
+#topbar li a:hover { color:rgb(100,200,200); }  
+#topbar li:nth-last-child(-n+2) { background-image: none; padding-right: 6px; }
+#topbar li:nth-last-child(-n+2):hover { color:color:rgb(240, 240, 240); }
+#topbar li:last-child { font-size: 12px; margin-top:4px; }
 
 /* =============================================================================
 	  Sidebar
