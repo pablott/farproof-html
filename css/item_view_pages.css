@@ -1,7 +1,7 @@
 /* [1] http://stackoverflow.com/questions/4013701/how-to-select-all-tr-except-first-tr-in-the-table */
 
 /* #view has to shrink to make space for #index */
-#view {left:0px; top:0px; bottom:213px; overflow: hidden;}
+#view {left:0px; top:0px; bottom:213px; overflow: hidden; padding:0px;}
 
 /* =============================================================================
 	  Item Contents (shows the Pages inside an Item in
