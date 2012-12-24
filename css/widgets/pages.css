@@ -61,9 +61,9 @@
             background-image: url('../../img/256-67-6-monochrome.png'), url('../../img/page_shadow_even.png') ;
             background-position: right;
 }
-.page_number {position:absolute; top:-17px; color:gray; width:20px; text-align:center;  border-radius: 4px 4px 0px 0px; }
-.thumb_container .odd > .page_number  { right:-3px; }
-.thumb_container .even > .page_number  { left:-3px; }
+.page_number {position:absolute; top:-17px; color:gray; padding: 0 4px 0 4px; border-radius: 4px 4px 0px 0px; }
+.thumb_container .odd > .page_number  { right:-3px; text-align:right; }
+.thumb_container .even > .page_number  { left:-3px; text-align:left; }
 
 .thumb_container .page_info { position:absolute; bottom:-40px; right:0; left:0;
                 text-align: center;
