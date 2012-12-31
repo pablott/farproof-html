@@ -49,7 +49,7 @@ body { background-image:url('../img/bg-controls-grid.png');
 .help {	  font-size:11px; line-height:14px; padding-left:8px; font-style:italic;
 	  margin-top:16px;
 	  }
-.accepted { color:#009d00; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);}
+.ok { color:#009d00; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);}
 .rejected { color:#d60303; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4); }
 .pending { color:#d5ba24; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4); }
 .comments { color:#17b9f7; text-shadow:0px 1px 0px rgba(250, 250, 250, .4), 0px -1px 0px rgba(0, 0, 0, .4);}

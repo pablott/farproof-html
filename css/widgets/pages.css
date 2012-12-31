@@ -77,7 +77,7 @@
 .thumb_container .odd > .page_status { right: -8px;  padding-right:8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px;}
 .thumb_container .even > .page_status { left: -8px; padding-left:8px; border-top-left-radius: 8px; border-bottom-left-radius: 8px;}
 
-.page_status.accepted {
+.page_status.ok {
      background-color:rgba(0,157,0,.8);
 }
 .page_status.rejected {
