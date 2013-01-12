@@ -17,7 +17,7 @@
         }
         
 /* Inner wrap neccesary to arrange thumbs horizontally */
-#index > #inner-wrap { margin-right:  -999em; float: left;
+#index > #inner-wrap { margin-right:  -9999em; float: left;
                         padding-right:40px;
         }
 
