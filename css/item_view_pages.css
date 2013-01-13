@@ -136,8 +136,8 @@
 	  Comment box
    ========================================================================== */
 .comment_box {
-        color:black; background: yellow url('../img/notebook.png');
+        color:black; background: yellow url('../img/notebook.png'); opacity:.3;
         width:100px; padding:12px 0 12px 0; height:100px; border-radius: 0 0 4px 4px;
-        position:absolute; left: 0px; top: 0; border:none; z-index: 1500;
+        position:absolute; left: 0px; top: 50px; border:none; z-index: 1500;
         }
 
