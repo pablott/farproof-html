@@ -20,7 +20,8 @@ $(document).ready(function() {
     })
     
     zoomIn();
-
+	navLeft();
+	navRight();
 
 });  // End of document ready
 
