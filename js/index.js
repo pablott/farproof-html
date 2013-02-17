@@ -22,6 +22,8 @@ $(document).ready(function() {
     zoomIn();
 	navLeft();
 	navRight();
+	navFullLeft();
+	navFullRight();
 
 });  // End of document ready
 
