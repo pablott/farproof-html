@@ -132,12 +132,4 @@
 
 
 
-/* =============================================================================
-	  Comment box
-   ========================================================================== */
-.comment_box {
-        color:black; background: yellow url('../img/notebook.png');
-        width:300px; padding:12px 0 12px 0; border-radius: 0 0 4px 4px;
-        position:absolute; left: 0px; top: 70px; border:none; z-index: 1500;
-        }
 

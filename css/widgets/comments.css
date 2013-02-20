@@ -1,0 +1,12 @@
+
+/* =============================================================================
+	  Comment box widget
+   ========================================================================== */
+.comment_box {
+        color:black; background: yellow url('../../img/notebook.png');
+        max-width:150px; padding:18px; border-radius: 0 0 16px 16px;
+		box-shadow: 0px 2px 4px rgba(0,0,0,.5);
+		margin-bottom: 12px;
+		font-size: 12px;
+        z-index: 1500;
+        }
