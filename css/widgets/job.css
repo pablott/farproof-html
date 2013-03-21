@@ -9,6 +9,7 @@
 	    }
 .job > .title { color: rgb(67, 65, 101); }
             
-.job_icon { background-image: url('../../img/icon-client-M.png'); background-repeat: no-repeat; background-position: top left;
-            position:relative; top:0px; height: 80px; width:60px; float:left;
+.job_icon { background-image: url('../../img/XXicon-client-M.png'); background-repeat: no-repeat; background-position: top left;
+			background: rgba(100,50,25,.4);
+            position:relative; top:0px; height: 60px; width:60px; float:left;
             }
