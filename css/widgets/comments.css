@@ -2,11 +2,45 @@
 /* =============================================================================
 	  Comment box widget
    ========================================================================== */
+   
 .comment_box {
-        color:black; background: yellow url('../../img/notebook.png');
-        max-width:150px; padding:18px; border-radius: 0 0 16px 16px;
-		box-shadow: 0px 2px 4px rgba(0,0,0,.5);
-		margin-bottom: 12px;
-		font-size: 12px;
-        z-index: 1500;
-        }
+	color:white; background: rgba(0,0,0,.6);
+	max-width:150px; padding:0px; border-radius: 4px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.5);
+	margin-bottom: 12px;
+	border: solid white 4px;
+	font-size: 12px;
+	z-index: 1500;
+	}
+
+.comment_box a { 
+	/* Do not allow links to other pages to be split between page_num and rev_num.
+	   Do not use 'white-space:nowrap' as this does allow the text to overflow.
+	*/
+	display: inline-block;
+}
+		
+.comment_box h3, h4  {
+	padding:0px; margin:0px; 
+}
+
+.comment_box h3  {
+	color:cyan; padding: 10px; 
+}
+
+.comment_box h4 {
+	margin: 12px 0px 2px 0px;
+}
+
+.affects_too { 
+	background-color: rgba(255,255,255,.4);
+	padding: 1px 10px 10px 10px;
+	position:relative; 
+}
+
+.btn_show_more {
+	position:absolute;  top:-15px; right:-3px;
+	background-color:green;
+	border-radius: 15px; font-size:8px; text-align: center; line-height: 15px;
+	width:30px; height:30px;
+}
