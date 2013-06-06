@@ -1,10 +1,9 @@
-/*#view {padding-top:23px; }*/
 .wrapper_1col {
-    clear:both;/* background-color:rgba(255,0,0,.1);*/
+    clear:both;
     position:relative; margin-left:10px;
 }
 .wrapper_2col {
-    width: 47%; /*background-color:rgba(0,255,0,.1);*/ float:left; height:100px;
+    width: 47%; float:left; height:100px;
     position:relative; margin-left:10px; margin-right:10px; min-width:263px; 
 }
 
@@ -27,7 +26,6 @@ li.password { width: 24%; }
 /*
 ##### Options ####
 */
-
 
 .opt { clear:both;
     

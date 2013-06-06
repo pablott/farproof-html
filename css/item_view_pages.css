@@ -25,8 +25,7 @@
 #index .dummy { width:0px; }
 
 /* Skin of the buttons */
-.btn_black { /*background: url('../img/bg-controls-darkest.png'), none;*/
-                background-color:rgba(77,77,77,0);
+.btn_black {    background-color:rgba(77,77,77,0);
                 background-attachment: fixed;
                 font-size: 11px; line-height: 20px; height:20px; width:80px;
                 color:white; text-align:center; text-shadow: 0px -1px 0px rgba(0, 0, 0, .6), 0px 1px 0px rgba(0, 0, 0, .6), 1px 0px 0px rgba(0, 0, 0, .6), -1px 0px 0px rgba(0, 0, 0, .6);
@@ -49,7 +48,6 @@
 .btn_black:hover { background: rgba(177,177,177,1); }
 .btn_black:active { background: rgba(82, 159, 254, 1); }
 
-/*#toolbar .vertical:hover, #toolbar .horizontal:hover { background: rgba(177,100,177,0);}*/
 .btn_black > div:hover { background: rgba(126,126,126,1); }
 .btn_black > div:active { background: rgba(82, 159, 254, 1); }
 
@@ -85,16 +83,6 @@
 .model:active { background: rgba(51,164,2,.5); color:red; }
 
 
-/* #toolbar > ul > li { border-radius: 0 0 8px 8px; opacity:1; }
-#toolbar > ul > li > ul > li { border:none; }
-#toolbar > ul > li:hover { background: none; }
-#toolbar > ul > li > ul > li:hover { background: rgba(126,126,126,1); }
-#toolbar > ul > li > ul > li:active { background: rgba(82, 159, 254, 1); }  */
-
-/*#toolbar .horizontal li:not(:first-child) { width:30px; }*/
-
-
-
 /* =============================================================================
 	  Index Toolbar:
 	  - toggle_index: hides/shows #index and rearranges #view accordingly
@@ -124,8 +112,7 @@
 
 #nav { position:absolute; left:132px; width:122px ;}
 #nav div { float:left; width:30px; }
-#nav #navFullLeft { /*margin-right:-8px;*/  }
-#nav #navLeft { /*border-right: solid 1px gray;*/  border-left: solid 1px gray;  border-radius:8px 0 0 0; }
+#nav #navLeft { border-left: solid 1px gray;  border-radius:8px 0 0 0; }
 #nav #navRight { border-right: solid 1px gray;  border-radius:0 8px 0 0; }
 
 #nav.btn_black:active  { background: rgba(177,177,177,1); }
