@@ -44,3 +44,25 @@
 	border-radius: 15px; font-size:8px; text-align: center; line-height: 15px;
 	width:30px; height:30px;
 }
+
+/* =============================================================================
+	  List for adding pages for comment assignment
+   ========================================================================== */
+.comment_add {
+	border:black 2px solid;
+}
+  
+.comment_add  {
+	display: inline;
+	width: 50px;
+	background-color: green;
+	font-size: 10px;
+	margin-right: 10px;
+	
+}
+  
+  
+  
+  
+  
+  
