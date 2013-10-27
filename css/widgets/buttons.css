@@ -2,7 +2,7 @@
 /* =============================================================================
 	  Controls
    ========================================================================== */
-.container { border: solid 1px #bebebe; border-radius:8px;
+.btn_container { border: solid 1px #bebebe; border-radius:8px;
         padding: 8px; float:left;
     }
     
