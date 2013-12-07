@@ -1,8 +1,8 @@
 /* =============================================================================
-	  Comment add box widget
+	  Comment add widget
    ========================================================================== */
 .comment_add  {
-	font-size: 10px;
+	font-size: 11px;
 	position: absolute;
 	width: 140px;
 	bottom: 0px;
@@ -14,7 +14,7 @@
 }
 
 .comment_add textarea {
-	width: 100%; height: 64px; border: none; resize: none; font-size: 12px; margin: 4px 0px;
+	width:100%; position: relative; right:0px; left:-4px; height: 64px; border: none; resize: none; font-size: 11px; padding: 4px; margin: 4px 0px;
 }
 
 .page.even  > .comment_add {
@@ -24,9 +24,12 @@
 	left: 16px; 
 }
 
-/* =============================================================================
-	  List for adding pages for comment assignment
-   ========================================================================== */
+.comment_add  button {
+	width: 100%;
+}
+
+
+/*   List for adding pages for multiple comment assignment   */
 .page_selection {
 	margin: 4px 0px;
 	max-height: 70px; overflow-y: scroll;
@@ -38,8 +41,9 @@
 
 .page_selection label { 
 	width: 18px; text-align: center;
-	display: inline-block; margin: 3px;
+	display: inline-block; margin: 4px;
 }
+
 
 /* =============================================================================
 	  Widget showing added comments
@@ -75,7 +79,7 @@
 }
 
 .comment_box h3, h4  {
-	text-wrap: break-word;
+	word-break: break-all; white-space: pre-wrap;
 }
 
 .comment_box h3  {
