@@ -98,10 +98,3 @@
 	position: relative; 
 }
 
-.btn_show_more {
-	position:absolute; top:-15px; right:-3px;
-	background-color:green;
-	border-radius: 15px; font-size:8px; text-align: center; line-height: 15px;
-	width:30px; height:30px;
-}
-
