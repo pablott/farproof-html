@@ -27,12 +27,11 @@
 .page.odd img { max-height:100%; max-width:100%; position:absolute; left:0px;  }
 
 .page_summary {
-	color:white; text-align:center; text-shadow: 0px -1px 0px rgba(0, 0, 0, .6), 0px 1px 0px rgba(0, 0, 0, .6), 1px 0px 0px rgba(0, 0, 0, .6), -1px 0px 0px rgba(0, 0, 0, .6);
-	border: 1px solid rgba(77,77,77,.6);
+	text-align:center; 
 	font-size: 11px; line-height: 20px; height:40px;
 	position: absolute;
 	top: 0px;
-	border-radius: 0 0 8px 8px;
+	border-radius: 0 0 3px 3px;
     border-top: none;
 	padding: 0px 10px;
 }

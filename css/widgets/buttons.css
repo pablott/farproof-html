@@ -1,87 +1,86 @@
+/* =============================================================================
+	  Control bar & Sidebar
+   ============================================================================= */
+#control_bar { 
+	  z-index:50; position:relative; top:74px;
+	   /*background-color:rgba(250,150,15,.1);*/
+	  text-align:center; 
+	  }
+	  
+#sidebar { min-height:220px; width:180px;
+	  z-index:50; position:fixed; top:110px; bottom:0; left:40px; 
+	  }
+.btn_box_top { position:absolute; right:0px; left:0px; top:0px; }
+.btn_box_bottom { position:absolute; right:0px; left:0px; bottom:40px; }
+.btn_box_left { position:absolute; left:0px; top:0px; bottom:0px; }
+.btn_box_center { display: inline-block;}
+.btn_box_right { position:absolute; right:0px; top:0px; bottom:0px; }
+
+
+/* =============================================================================
+	  Button icons
+   ========================================================================== */
+
+.btn_icon { margin:0; float:left; padding-left:2px; display: block;
+	 font-size: inherit; line-height: inherit;
+	 top:-1px; position:relative; 
+	 }
+.btn_icon1 { font-family: 'HeydingsControlsRegular'; color: inherit; }
+.btn_icon2 { font-family: 'HeydingsCommonIconsRegular'; color: inherit; }
+
 
 /* =============================================================================
 	  Controls
    ========================================================================== */
-.btn_container { border: solid 1px #bebebe; border-radius:8px;
-        padding: 8px; float:left;
-    }
-    
 .header {
         border-bottom: solid 1px #bebebe; margin-bottom: 15px; padding-top:24px; margin-right:12px;
         clear:both;
-        
 }
 
 /* =============================================================================
 	  Buttons
    ========================================================================== */
 .btn { -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none;
-	  cursor:pointer; color:rgb(53, 53, 53);
-	  margin:auto; clear:both;
-	  font-weight:normal;
-	  text-align:center; font-size:12px; line-height:28px;
-	  border-radius:8px;
- 	  background-color: rgb(146, 164, 173);
-	  border: solid 1px #bebebe;
-	  background-origin:content-box; background-image:url('../../img/bg-controls.png');
-	  }
-
-
-.btnM { margin-bottom:8px; padding:2px 5px; max-width:200px; height:28px; }
-
-.btnH { float:left; clear: none;
-	  padding-left:0; padding-right:0; 
+	  cursor:pointer;
+	  margin:auto;
+	  font-weight:normal; text-transform:uppercase; letter-spacing:1px;
+	  text-align:center; font-size:11px;
+	  border-radius:3px;
+	  border: solid 1px rgba(255,255,255,.7);
+	  background-origin:content-box; background-color:rgb(216, 216, 216);
 }
-.btnM.left {  border-right:none;
-	  border-radius:8px 0px 0px 8px;
-	  width:49%;
-	  }
+.btnM { margin-bottom:8px; padding:2px 5px; height:26px; width:120px; line-height: 26px;}
 
-.btnM.center { padding-left:0; padding-right:0;
-	  border-width: 1px  0px;
-	  border-radius:0px;
-	  width:33%;
-	  }
-.btnM.right { 
-	  border-radius:0px 8px 8px 0px;
-	  width:49%;
-	  }
+.btnM.btnV { clear:both; margin: 14px 0 14px 0;}
+.btnM.btnV.top { border-radius: 3px 3px 0px 0px; margin-bottom: 0px;}
+.btnM.btnV.middle { border-radius:0px; border-top-width: 0px; margin:0px;}
+.btnM.btnV.bottom { border-top-width: 0px; border-radius: 0px 0px 3px 3px; margin-top: 0px;}
 
-.btnM.btnV { clear:both;
-	  margin:0px;
-	  height:20px;
-	  line-height: 20px;
-}
-.btnM.top { border-radius: 8px 8px 0px 0px; }
-.btnM.middle { 	 border-radius:0px;
-		 border-top-width: 0px;
-}
-.btnM.bottom {   border-top-width: 0px;
-	  	 border-radius: 0px;
-	  	 border-radius: 0px 0px 8px 8px;
-		 margin-bottom: 16px;
-}
-
-
-
-
+.btnM.btnH { float:left; margin: 0 14px 0 14px;}
+.btnM.btnH.left { border-radius: 3px 0px 0px 3px; margin-right: 0px;}
+.btnM.btnH.middle { border-radius:0px; border-left-width: 0px; margin:0px;}
+.btnM.btnH.right { border-left-width: 0px; border-radius: 0px 3px 3px 0px; margin-left: 0px;}
+/*table.programs td:not(:first-child):not(:last-child)*/
 
 /* EN PRUEBAS para ver el efecto del botón pulsado */	  
-.btnM.pushed { background-image:url('../../img/bg-controls-darkest.png');
-		  padding-top:3px; padding-bottom:1px;
-		  box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.5); color:white;
+.btnM.pushed { padding-top:3px; padding-bottom:1px; background-color:rgba(143, 196, 200, .4);
+		  box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.4); color:white;
 	  }
-.btnM:hover { background-image:url('../../img/bg-controls-dark.png');
-		  color:white;
-                   box-shadow: inset 0px 0px 6px 1px rgba(250,250,250,.2); border-color: transparent;
-		      }
-.btnM:active { background-image:url('../../img/bg-controls-darkest.png');
+	  
+.btnM.pushed:hover { 
+		box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,.5);
+		background-color:rgba(143, 196, 200, .4);
+ }	  
+.btnM:hover { background-color: rgba(143, 196, 200, .1);
+           box-shadow: 0px 0px 3px 2px rgba(143, 196, 200,.6);
+}
+.btnM:active { 
 		  padding-top:3px; padding-bottom:1px;
 		  box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.5);
 	      }
-.btnM.delete:hover { background-image:url('../../img/bg-controls-dark-delete.png');
-                     box-shadow: 0px 0px 6px #ff1f34, inset 0px 0px 6px 1px rgba(250,250,250,.2); border-color: transparent;
+.btnM.delete:hover { background-color:rgba(255, 31, 52, .4);
+                     box-shadow: 0px 0px 6px rgb(255, 31, 52), inset 0px 0px 6px 1px rgba(250,250,250,.2);
 		      }
-.btnM.delete:active { background-image:url('../../img/bg-controls-darkest-delete.png');
-		    box-shadow:  0px 0px 6px #ff1f34, inset 0px 0px 6px 1px rgba(0,0,0,.5);
+.btnM.delete:active { background-color:rgba(255, 31, 52, .7); color:white;
+		    box-shadow:  0px 0px 6px rgb(255, 31, 52), inset 0px 0px 6px 1px rgba(0,0,0,.5);
                 }

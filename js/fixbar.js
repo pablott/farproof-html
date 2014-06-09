@@ -30,7 +30,7 @@ $('#view').scroll(function () {
     // it has to be reset because the previous condition
     // never gets down to zero again.
     else {
-        $('.list_header').css('left', '0');
+        $('.list_header').css('left', '40');
         $('.list_header').css('top', '0');
     }
 });
