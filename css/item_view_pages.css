@@ -1,7 +1,8 @@
 /* [1] http://stackoverflow.com/questions/4013701/how-to-select-all-tr-except-first-tr-in-the-table */
 
-/* #view has to shrink to make space for #index */
-#view {left:0px; top:0px; bottom:213px; overflow: hidden; padding:0px;}
+/* #view has to shrink to make space for #index.
+	Also, it narrows the top margin down to zero. */
+#view {left:0px; top:30px; bottom:213px; overflow: hidden; padding:0px;}
 
 /* =============================================================================
 	  Item Contents (shows the Pages inside an Item in
@@ -18,14 +19,14 @@
         
 /* Inner wrap neccesary to arrange thumbs horizontally */
 #index > #inner-wrap { margin-right:  -9999em; float: left;
-                        padding-right:40px;
+                        padding-right:40px; display:inline-block;
         }
 
 /* Dummy element is 0px width when arranged horizontally (NOTE: still has margin/padding) */
 #index .dummy { width:0px; }
 
 /* Skin of the buttons */
-.btn_black {    background-color:rgba(77,77,77,0);
+.btn_black {    
                 background-attachment: fixed;
                 font-size: 11px; line-height: 20px; height:20px; width:80px;
                 text-align:center; 
