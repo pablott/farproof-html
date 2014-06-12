@@ -3,36 +3,19 @@
 	  Item Contents (shows the Pages inside an Item in
 	  two forms: thumbs and list)
    ============================================================================= */
-
-/*
-##### LIST ####
-*/
-li.checkbox { width:6%; }
-li.page { width:8%; }
-#view .list_container li.page { text-align:right; }
-li.comments { width:12%; }
-li.revisions { width:12%; }
-li.status { width:17%; font-weight:bold;}
-li.updated { width:22%; }
-li.added { width:22%; }
-
-
-
-#view  ul  { min-width:600px;
-    clear:both; height:34px;
-    font-size: 12px;
+#view ul  { min-width:600px; height:40px; line-height:40px;
+    clear:both; 
+    font-size: 12px; text-align: center; 
     list-style: none;    
     border-bottom:none;
 	padding: 0 40px 0 40px;
 }
-#view li{
-    height: 40px;
+#view li {
     float: left;
-    text-align: center;
-    padding: 0px 0px;
+    vertical-align: middle;
 }
 
-.list_header {  height: 40px; line-height:40px; 
+.list_header {  
                 text-overflow:ellipsis; white-space: nowrap; 
                 z-index: 100; 
                 position:absolute; top:0px; left:0px; right:0px; font-weight:bold;
@@ -44,14 +27,20 @@ li.added { width:22%; }
                     transition-duration: 4s;
                     transition-delay: 2s;
 }
+li.checkbox { width:6%; }
+li.page { width:8%; }
+#view .list_container li.page { text-align:right; }
+li.comments { width:12%; }
+li.revisions { width:12%; }
+li.status { width:17%; font-weight:bold; }
+li.updated { width:22%; } 
+li.added { width:22%; }
+li.twolines { line-height:16px; font-size:11px; margin-top:4px;} /* Half the line-height to fit two lines.*/
 
-
-#view .list_container li { height: 24px; }
 .list_container { 
     position:absolute; top:40px; left:0px; right:0px; bottom:0;
-    line-height: 40px; text-overflow:ellipsis; white-space: nowrap; 
+    text-overflow:ellipsis; white-space: nowrap; 
 	}
-.list_container ul {}
 .list_container ul:nth-child(odd) { background-color: rgba(174, 176, 191, 0.2); }
 .list_container ul:hover { background-color: rgba(143, 196, 200, 0.2); box-shadow: inset 0px 0px 3px 2px rgba(143, 196, 200,.6); }
 
