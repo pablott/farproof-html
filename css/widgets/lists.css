@@ -15,12 +15,14 @@
     vertical-align: middle;
 }
 
-.list_header {  
-                text-overflow:ellipsis; white-space: nowrap; 
+.list_header {  text-overflow:ellipsis; white-space: nowrap; 
                 z-index: 100; 
                 position:absolute; top:0px; left:0px; right:0px; font-weight:bold;
 }
-.list_header li:hover { background-color: rgba(143, 196, 200, 0.2); box-shadow: inset 0px 0px 3px 2px rgba(143, 196, 200,.6); border-radius:3px; }
+.list_header li:hover { background-color: rgba(143, 196, 200, 0.2); 
+					  box-shadow: inset 0px 0px 3px 2px rgba(143, 196, 200,.6); 
+					  border-radius:3px; 
+}
 .list_header.scrolled {
                     background: -moz-linear-gradient(rgb(216, 216, 216) 0%, rgb(216, 216, 216) 95%, rgba(216, 216, 216, 1) 96%, rgba(100, 100,100, 0) 100%); /* FF3.6+ */
                     transition-property: background;

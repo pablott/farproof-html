@@ -15,12 +15,12 @@
         overflow: auto; 
         overflow-x: scroll;
         border-top: solid 1px rgba(255,255,255,.7);
-        }
+}
         
 /* Inner wrap neccesary to arrange thumbs horizontally */
 #index > #inner-wrap { margin-right:  -9999em; float: left;
                         padding-right:40px; display:inline-block;
-        }
+}
 
 /* Dummy element is 0px width when arranged horizontally (NOTE: still has margin/padding) */
 #index .dummy { width:0px; }
@@ -34,7 +34,7 @@
                 -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none;
                 cursor:pointer; 
                 margin-right:10px; overflow: hidden; float:left;
-                }
+}
 
 #toolbar .btn_black { border-radius: 0 0 3px 3px;
                         border-top: none;
@@ -60,28 +60,26 @@
    ========================================================================== */
 #toolbar { position: fixed; top: 0px; left: 38px;
         z-index: 2000;
-        }
+}
         
 #toolbar input { background-color:rgba(216,216,216,.0); text-align:center; width:42px; height:20px; 
 				border: solid 1px rgba(255,255,255,.7);
                 border:none; border-radius: 3px; color:inherit; text-shadow:inherit;
                 font-size:inherit; font-family:monospace;
                 -moz-user-select: toggle; -khtml-user-select: toggle; -webkit-user-select: toggle; -o-user-select: toggle;
-                }
+}
 
-#toolbar input:hover { background-color: rgba(143, 196, 200, .1); 
-           box-shadow: 0px 0px 3px 2px rgba(143, 196, 200,.6); }
-#toolbar input:focus {
-		  box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.5); }
-
+#toolbar input:hover { background-color: rgba(143, 196, 200, .1); box-shadow: 0px 0px 3px 2px rgba(143, 196, 200,.6); }
+#toolbar input:focus { box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.5); }
 
 #toolbar .vertical div:not(:first-child) { width:40px; float:left; }
 #toolbar .horizontal div:first-child { width:80px; float:left; }
 #toolbar .horizontal div:not(:first-child) { width:30px;  float:left; }    /* [1] */
 #toolbar > div:first-child { width:30px; }
 
-#toolbar .vertical:active, #toolbar .horizontal:active { 		box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,.5);
-		background-color:rgba(143, 196, 200, .4);}
+#toolbar .vertical:active, #toolbar .horizontal:active { box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,.5);
+		background-color:rgba(143, 196, 200, .4); 
+}
 #toolbar .btn_black > div:first-child:hover { background: rgba(126,126,126,0); } /* no dark bground for first element */
 #toolbar .btn_black > div:first-child:active { background: rgba(82, 159, 254, 1); }
 
@@ -94,37 +92,31 @@
 	  - toggle_index: hides/shows #index and rearranges #view accordingly
 	  - toggle_list: hides/shows numeric page_list (no thumbs here)
    ========================================================================== */
-#index_toolbar { position: fixed; bottom:213px; left:38px;
-                z-index:2000;
-        }
+#index_toolbar { position: fixed; bottom:213px; left:38px; z-index:2000; }
 
 #toggle_index { width: 30px; }
 
 #toggle_list { bottom:0px; overflow-x:hidden; overflow-y: auto;
               position:absolute; left:42px; max-height:200px;
-        }
+}
 
 #list {  left: 0px; top: 0px; color:white;
         font-family: monospace; position:absolute; top:0px;
         background-color: rgba(255,100,50,.0); width: 100%;
-        }
+}
 #list .selected { color:white; background-color: rgba(82, 159, 254, 1); }
 
 #list > *:hover  { background-color: rgba(143, 196, 200, .1);
            box-shadow: 0px 0px 3px 2px rgba(143, 196, 200,.6); }
 #list > .selected:hover  { box-shadow:inset 0px 0px 6px 1px rgba(0,0,0,.5); }
-#toggle_list.btn_black:active  { 		box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,.5);
-		background-color:rgba(143, 196, 200, .4); }
-
-
+#toggle_list.btn_black:active  { box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,.5);
+		background-color:rgba(143, 196, 200, .4); 
+}
 #nav { position:absolute; left:132px; width:122px ;}
 #nav div { float:left; width:30px; }
 #nav #navLeft { border-left: border: solid 1px rgba(255,255,255,.7);  border-radius:3px 0 0 0; }
 #nav #navRight { border-right: border: solid 1px rgba(255,255,255,.7);  border-radius:0 3px 0 0; }
 
-#nav.btn_black:active  { 		box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,.5);
-		background-color:rgba(143, 196, 200, .4); }
-
-
-
-
+#nav.btn_black:active  { box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,.5);
+		background-color:rgba(143, 196, 200, .4); 
+}
