@@ -3,17 +3,16 @@
 	  Item Contents (shows the Pages inside an Item in
 	  two forms: thumbs and list)
    ============================================================================= */
-#view ul  { min-width:600px; height:40px; line-height:40px;
+#view ul { min-width:600px; height:40px; line-height:40px;
     clear:both; 
     font-size: 12px; text-align: center; 
     list-style: none;    
     border-bottom:none;
 	padding: 0 40px 0 40px;
+	-moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none;
+	cursor:pointer;
 }
-#view li {
-    float: left;
-    vertical-align: middle;
-}
+#view li { float: left;}
 
 .list_header {  text-overflow:ellipsis; white-space: nowrap; 
                 z-index: 100; 
@@ -29,15 +28,15 @@
                     transition-duration: 4s;
                     transition-delay: 2s;
 }
-li.checkbox { width:6%; }
-li.page { width:8%; }
-#view .list_container li.page { text-align:right; }
-li.comments { width:12%; }
-li.revisions { width:12%; }
-li.status { width:17%; font-weight:bold; }
+li.checkbox { width:7%; }
+li.page { width:10%; }
+#view .list_container li.page { text-align:right; width:7%; padding-right:3%; }
+li.comments { width:10%; }
+li.revisions { width:10%; }
+li.status { width:18%; font-weight:bold; }
 li.updated { width:22%; } 
 li.added { width:22%; }
-li.twolines { line-height:16px; font-size:11px; margin-top:4px;} /* Half the line-height to fit two lines.*/
+li.twolines { padding:4px 0; line-height:16px; font-size:11px; } /* Half the line-height to fit two lines.*/
 
 .list_container { 
     position:absolute; top:40px; left:0px; right:0px; bottom:0;
