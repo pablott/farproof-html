@@ -4,7 +4,7 @@
 document.ready = function() {
 $('#view').scroll(function () {
     
-    // Add transparency to .list_header when scrolled
+    // Add shadow to .list_header when scrolled
     if ( $('#view').scrollTop() > 0 ) {
         $('.list_header').addClass("scrolled");
     }
@@ -22,15 +22,15 @@ $('#view').scroll(function () {
     // only if #view has been vertically OR horizontally scrolled
     // ('left' is presumed 0)
     if ( $('#view').scrollTop() > 0 || $('#view').scrollLeft() > 0 ) {
-        //$('#scroller').css('position', 'absolute');
-        //$('.list_header').css('left', -0.01*$('#view').scrollLeft());
-        $('.list_header').css('top', $('#view').scrollTop());
+        $('.list_header').css({
+			'top': $('#view').scrollTop(), 
+			'right': -$('#view').scrollLeft(), 
+		});
     }
     // Or else it means #view is not scrolled;
     // it has to be reset because the previous condition
     // never gets down to zero again.
     else {
-        $('.list_header').css('left', '40');
         $('.list_header').css('top', '0');
     }
 });
