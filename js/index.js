@@ -59,10 +59,10 @@ $(document).ready(function() {
             }
             else {
                 $("#index_toolbar").stop().animate({
-                    bottom: 213,
+                    bottom: 200,
                 }, speed);
                 $("#view").stop().animate({
-                    bottom: 213,
+                    bottom: 200,
                 }, speed, function() {
                     // Animation complete: adjust vertical align
                     pageResize();
