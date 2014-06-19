@@ -14,6 +14,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+
 /* =============================================================================
 	  Primary Styles
    ========================================================================== */
@@ -21,6 +22,7 @@ body { background-image: -moz-linear-gradient(center bottom , rgba(29, 29, 44, 0
 	  background-attachment:fixed; background-color:#d8d8d8;
 	  overflow:hidden;
 }
+
 
 /* =============================================================================
 	  Reusable elements
@@ -80,7 +82,9 @@ body { background-image: -moz-linear-gradient(center bottom , rgba(29, 29, 44, 0
 /* =============================================================================
 	  Topbar
    ============================================================================= */
-#header {padding-right:8px; text-align:right; font-size:10px;color:gray; letter-spacing:1px; font-weight:bold;background-color:rgba(255,255,255,.6); left:40px; right:40px; top:0px; height:16px; position:absolute;}
+#header {padding-right:8px; text-align:right; font-size:10px;color:gray; letter-spacing:1px; font-weight:bold;
+		background-color: rgba(255,255,255,.6); left:40px; right:40px; top:0px; height:16px; position:absolute;
+}
 #topbar { font-size: 1.4em; font-weight:bold; line-height:50px;
 	  text-shadow: 0px 3px 2px rgba(118, 118, 163, 0.8); color:white; 
 	  white-space: nowrap; 
@@ -89,18 +93,17 @@ body { background-image: -moz-linear-gradient(center bottom , rgba(29, 29, 44, 0
 	  height: 58px; 
 	  top:0; right:0; left:0; z-index:1000;
 	  position:fixed; overflow: hidden;
-	  }
+}
 #topbar ul { list-style: none; }
-
-#topbar li { float:left; padding-left:1%; padding-right:4% ; color:rgba(255,255,255,.8);
+#topbar li { float:left; padding-left:2%; padding-right:4% ; color:rgba(255,255,255,.8);
              background-image: url('../img/arrow.png'); background-position: center right; background-repeat: no-repeat;
-	  }
+}
 #topbar li a:hover { text-shadow: 0px 3px 2px rgb(23, 185, 247); }  
-#topbar li:nth-last-child(-n+2) { background:none; padding-right: 6px; color:white;}
-/*#topbar li:nth-last-child(-n+2):hover { color:rgb(240, 240, 240); }*/
+#topbar li:first-child { padding-left:0; }
 #topbar li:last-child { font-size: 12px; margin-top:4px; }
-
+#topbar li:nth-last-child(-n+2) { background:none; padding-right: 0px; color:white; }
     
+	
 /* =============================================================================
 	  View
    ============================================================================= */
@@ -134,10 +137,11 @@ body { background-image: -moz-linear-gradient(center bottom , rgba(29, 29, 44, 0
 }
 .task .seps .processing {top:-5px; bottom:-5px; right:-5px; left:-5px; position:absolute; border:2px solid rgb(23, 185, 247); border-radius:12px; display: none;}
 .task .seps .sep_name {height:16px; position:relative; right:50px; font-size:10px; text-align:right;}
+
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
-
 @media screen and (max-width: 555px) {
 	/* Style adjustments for viewports that meet the condition */
 	footer{ display:none; }
