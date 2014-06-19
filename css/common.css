@@ -57,9 +57,13 @@ body { background-image: -moz-linear-gradient(center bottom , rgba(29, 29, 44, 0
 	  margin:0px; margin:10px 0px 24px 0px;
 }
 	  
-.mini_summary { font-size:10px; text-align: right;
-	        position:absolute; right:0px; top:0px; 
+.mini_summary { font-size:8px; text-align: center;
+	        position:relative; top:15px; 
 }
+
+.totals { text-shadow: 1px 1px 0px rgba(250, 250, 250, .6);
+	    font-size:10px; text-align: center; line-height: 14px; font-weight: bold;
+ }
 
 .unactive { opacity:0.65; }
 
