@@ -27,16 +27,17 @@ li.twolines { padding:4px 0; line-height:16px; font-size:11px; } /* Half the lin
 .list_header {  text-overflow:ellipsis; white-space: nowrap; 
                 z-index: 100; 
                 position:absolute; top:0px; left:0px; right:0px; font-weight:bold;
+				background-color: rgb(216, 216, 216); box-shadow: 0px 0px 7px 3px rgba(0,0,0,0);
 }
 .list_header li:hover { background-color: rgba(143, 196, 200, 0.2); 
 					  box-shadow: inset 0px 0px 3px 2px rgba(143, 196, 200,.6); 
 					  border-radius:3px; 
 }
 .list_header.scrolled { 
-                    background: -moz-linear-gradient(rgb(216, 216, 216) 0%, rgb(216, 216, 216) 95%, rgba(216, 216, 216, 1) 96%, rgba(100, 100,100, 0) 100%); /* FF3.6+ */
-                    transition-property: background;
-                    transition-duration: 4s;
-                    transition-delay: 2s;
+					box-shadow: 0px 0px 7px 3px rgba(0,0,0,.3);
+                    transition-property: box-shadow;
+                    transition-duration: .7s;
+                    transition-delay: 0s;
 }
 
 .list_container { 
