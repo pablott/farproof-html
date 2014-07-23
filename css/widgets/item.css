@@ -1,7 +1,21 @@
 /* =============================================================================
 	  Item widget
    ============================================================================= */
-.item  > .icon { background-image: url('../../img/XX.png');
-				background-color: rgba(201, 137, 64, 0.4);
+.item_thumb{ float:left; display:inline-block; text-align:center; font-size:10px;
+				background:url('../../img/folder.png') top center no-repeat;
+}
+
+.item_list { position:absolute; top:0;
+		height:300px; left:0; right:0;
+        overflow: scroll-x; 
+}
+
+/* Inner wrap neccesary to arrange thumbs horizontally */
+.item_list > .inner-wrap { margin-right: -9999em; float:left;
+                        padding:8px 40px 0 14px; display:inline-block;
+}
+
+.item  > .icon { background-image: url('../../img/folder.png');
+				background-color: rgba(201, 137, a64, 0.4);
 }
   

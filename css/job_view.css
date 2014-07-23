@@ -1,0 +1,11 @@
+#view{ top:200px; }
+
+.desc_box{ height:80px; overflow:hidden; 
+position:relative; top:8px; text-align:center;
+ }
+ 
+ .desc_box .summary { text-align:left;
+	position:absolute; left:90px; right:0; top:0; bottom:0;
+ }
+ 
+.desc_box .title { float:left; }
