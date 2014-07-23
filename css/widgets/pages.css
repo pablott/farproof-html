@@ -79,11 +79,11 @@
                 font-size:10px; line-height:10px; font-style: italic;
 }
 
-.thumb_container .odd { margin:0px 20px 0px 0px;
+.page_thumb.odd { margin:0px 20px 0px 0px;
             background-image: url('../../img/256-67-6-monochrome.png'), url('../../img/page_shadow_odd.png') ;
             background-position: left ;
 }
-.thumb_container .even { margin:0px 0px 0px 20px; 
+.page_thumb.even { margin:0px 0px 0px 20px; 
             background-image: url('../../img/256-67-6-monochrome.png'), url('../../img/page_shadow_even.png') ;
             background-position: right;
 }
