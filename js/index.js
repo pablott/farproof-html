@@ -1,7 +1,7 @@
 
 
 $(document).ready(function() {
-    selectList(); // Get cliked div in #list
+    selectList(); // Get clicked div in #list
     toggleList(); // Show/hide list
     toggleIndex(); // Show toggleIndex 
     toggleToolbar(); // Controls toolbar
