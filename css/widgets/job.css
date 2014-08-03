@@ -1,7 +1,25 @@
 /* =============================================================================
 	  Job widget
    ============================================================================= */
-.job_thumb{ float:left; display:inline-block; text-align:center; font-size:10px; }   
+.job_thumb{ text-align:center; 
+			position:relative; left:0;
+}   
+
+.job_thumb .title { font-size:15px; color:rgb(27,27,27); letter-spacing:.5px;
+			background:url('../../img/folder.png') top left no-repeat; background-origin:content-box;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.7); 
+			padding-bottom:4px; padding-left:40px; margin-left:-40px; padding-right:40px; margin-right:-40px;
+			background-image: url('../../img/folder.png')/*, -moz-linear-gradient(center bottom, rgba(71, 71, 105, 0.1) 0%, rgba(29, 29, 44, 0) 50%)*/;
+			box-shadow: 0px 10px 10px rgba(71, 71, 105, 0.1);
+}
+
+.job_thumb .summary { text-align:center; font-size:11px; line-height:14px; font-family: 'Open Sans Condensed', sans-serif;
+ }
+.job_thumb .desc { text-align:center; }
+.job_thumb .date { position:absolute; right:0; text-align:left;}
+.job_thumb .count { position:absolute; left:0px; text-align:right;}
+.job_thumb .pk { position:absolute; top:5px; right:0; text-align:left;}
+
 .folder { background-color: #b0d993; /* Fallback for non rgba browsers */ float:left;
 	    box-shadow: inset -1px -1px 1px 0px rgba(0, 0, 0, .2),  inset 0px 1px 0px rgba(250, 250, 250, .6), 2px 2px 1px 0px rgba(0, 0, 0, .1);
 	    background-image: url('../../img/256-67-6-monochrome.png'); background-color: rgba(176,217,147,1);
