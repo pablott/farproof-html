@@ -2,20 +2,17 @@
    Author: Pablo Trabajos Tamayo
    ========================================================================== */
 /* =============================================================================
-	  Reset
+	  Font families
    ========================================================================== */
 @font-face {
   font-family: Open Sans;
   src: url('../fonts/open-sans/OpenSans-Regular.ttf');
 }   
-
-
 @font-face {
   font-family: Open Sans;
   src: url('../fonts/open-sans/OpenSans-Italic.ttf');
   font-style:italic;
 } 
-
 @font-face {
   font-family: Open Sans;
   src: url('../fonts/open-sans/OpenSans-Bold.ttf');
@@ -26,7 +23,11 @@
   font-family: Open Sans Condensed;
   src: url('../fonts/open-sans-condensed/OpenSans-CondLight.ttf');
 }  
-
+@font-face {
+  font-family: Open Sans Condensed;
+  src: url('../fonts/open-sans-condensed/OpenSans-CondLightItalic.ttf');
+  font-weight: italic;
+}  
 @font-face {
   font-family: Open Sans Condensed;
   src: url('../fonts/open-sans-condensed/OpenSans-CondBold.ttf');
