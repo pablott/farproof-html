@@ -1,4 +1,42 @@
 /* =============================================================================
+	  Checkboxes & Bookmarks
+   ============================================================================= */
+input[type='checkbox'] {
+    display:none;
+}
+input[type='checkbox'] + label {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+input[type='checkbox'] + label.bookmark {
+    width:21px;
+    height:21px;
+	padding-left:14px;
+	font-family:'Open Sans Condensed', sans-serif; text-align:left; font-size:14px; line-height:21px; letter-spacing:.5px;
+	font-weight: italic; color:gray;
+	background:url('../../img/bookmark-off.png') -3px center no-repeat padding-box; 
+}
+input[type='checkbox']:checked + label.bookmark  {
+	background:url('../../img/bookmark-on.png') -3px center no-repeat padding-box;
+}
+
+input[type='checkbox'] + label.checkbox {
+    width:16px;
+    height:16px;
+	border-radius:8px;
+	box-shadow:inset 0px 0px 4px 1px rgba(0,0,0,.1); 
+}
+input[type='checkbox']:checked + label.checkbox  {
+    background:rgba(143, 196, 200, .4) url('../../img/check-on.png') center center no-repeat;
+	box-shadow:inset 0px 2px 4px 1px rgba(0,0,0,.2); 
+}
+input[type='checkbox'] + label.checkbox:hover {
+	box-shadow:inset 0px 0px 6x 1px rgba(0,0,0,.1);
+}
+
+
+/* =============================================================================
 	  Control bar & Sidebar
    ============================================================================= */
 #control_bar { 
@@ -19,7 +57,6 @@
 /* =============================================================================
 	  Button icons
    ========================================================================== */
-
 .btn_icon { margin:0; float:left; padding-left:2px; display: block;
 	 font-size: inherit; line-height: inherit;
 	 top:-1px; position:relative; text-transform:none;
@@ -35,6 +72,7 @@
         border-bottom: solid 1px #bebebe; margin-bottom: 15px; padding-top:24px; margin-right:12px;
         clear:both;
 }
+
 
 /* =============================================================================
 	  Buttons
