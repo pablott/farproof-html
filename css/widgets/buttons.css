@@ -13,7 +13,7 @@ input[type='checkbox'] + label.bookmark {
     width:21px;
     height:21px;
 	padding-left:14px;
-	font-family:'Open Sans Condensed', sans-serif; text-align:left; font-size:14px; line-height:21px; letter-spacing:.5px;
+	font-family:'Open Sans Condensed', sans-serif; text-align:left; font-size:13px; line-height:21px; letter-spacing:.5px;
 	font-weight: italic; color:gray;
 	background:url('../../img/bookmark-off.png') -3px center no-repeat padding-box; 
 }
@@ -57,7 +57,7 @@ input[type='checkbox'] + label.checkbox:hover {
 /* =============================================================================
 	  Button icons
    ========================================================================== */
-.btn_icon { margin:0; float:left; padding-left:2px; display: block;
+.btn_icon { margin:0; float:left; padding-left:2px; 
 	 font-size: inherit; line-height: inherit;
 	 top:-1px; position:relative; text-transform:none;
 	 }
@@ -70,7 +70,7 @@ input[type='checkbox'] + label.checkbox:hover {
    ========================================================================== */
 .header {
         border-bottom: solid 1px #bebebe; margin-bottom: 15px; padding-top:24px; margin-right:12px;
-        clear:both;
+        clear:both; 
 }
 
 
