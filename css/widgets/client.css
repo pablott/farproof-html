@@ -1,6 +1,4 @@
-
 /* =============================================================================
 	  Client widget
    ============================================================================= */
-.client  > .icon { background-image: url('../../img/icon-client-M.png');
-}
+.client > .icon { background-image: url('../../img/icon-client-M.png'); }

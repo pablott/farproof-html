@@ -1,7 +1,4 @@
-#view{ top:220px; }
+#view { top: 220px; }
 
-.desc_box{ /*height:80px; overflow:hidden; display:inline-block;
-position:relative; top:8px; text-align:center; clear:both;*/
-	margin-top:20px;
- }
+.desc_box { margin-top: 20px; }
  
