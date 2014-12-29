@@ -1,25 +1,18 @@
 function pageResize() {
     var page_height = $(".page").height();
     var img_height = $(".page img").height();
-    var target_height = (page_height/2)-(img_height/2);
-        
+    var target_height = (page_height / 2) - (img_height / 2);
+
     // Output
-    var str2 =  'page:' + page_height + ' img:' + img_height;
-    $('.debug').html(str2);  
-        
-        // TODO add method for resizing window only after 
-        $(".page img").stop().animate({
-            top: target_height,
-        }, 200);
+    var str2 = 'page:' + page_height + ' img:' + img_height;
+    $('.debug').html(str2);
+
+    // TODO add method for resizing window only after
+    $(".page img").stop().animate({
+        top: target_height
+    }, 200);
 
 }
-
-
-
-
-
-
-
 
 
 // JavaScript method
